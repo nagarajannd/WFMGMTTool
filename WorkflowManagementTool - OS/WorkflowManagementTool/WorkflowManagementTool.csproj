@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9690EB53-6A85-4458-AB24-BD2A2370283F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WorkflowManagementTool</RootNamespace>
+    <AssemblyName>WorkflowManagementTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormOpenWorkFlowVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpenWorkFlowVersion.Designer.cs">
+      <DependentUpon>FormOpenWorkFlowVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreviewFlowChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreviewFlowChart.Designer.cs">
+      <DependentUpon>FormPreviewFlowChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowCredits.Designer.cs">
+      <DependentUpon>FormShowCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkFlowProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkFlowProperties.Designer.cs">
+      <DependentUpon>FormWorkFlowProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateWorkFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateWorkFlow.Designer.cs">
+      <DependentUpon>FormCreateWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputDialogBox.Designer.cs">
+      <DependentUpon>FormInputDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpenExistingWorkFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpenExistingWorkFlow.Designer.cs">
+      <DependentUpon>FormOpenExistingWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExecuteWorkFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExecuteWorkFlow.Designer.cs">
+      <DependentUpon>FormExecuteWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUploadImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUploadImage.Designer.cs">
+      <DependentUpon>FormUploadImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workflow_px2_icon.ico" />
+    <None Include="Resources\NewLOGO.JPG" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\website.png" />
+    <None Include="Resources\UpBtn.bmp" />
+    <None Include="Resources\Workflow.png" />
+    <None Include="Resources\Open_Image.png" />
+    <None Include="Resources\no-image-dots.png" />
+    <None Include="Resources\RefreshBtn.bmp" />
+    <None Include="Resources\UndoBtn.bmp" />
+    <None Include="Resources\Unchecked.bmp" />
+    <None Include="Resources\SaveBtn.bmp" />
+    <None Include="Resources\SaveAsBtn.bmp" />
+    <None Include="Resources\ResetProjectBtn.bmp" />
+    <None Include="Resources\RenameBtn.bmp" />
+    <None Include="Resources\RedoBtn.bmp" />
+    <None Include="Resources\PropertiesBtn.bmp" />
+    <None Include="Resources\PasteBtn.bmp" />
+    <None Include="Resources\OpenBtn.bmp" />
+    <None Include="Resources\NewItemsBtn.bmp" />
+    <None Include="Resources\NewDiagramBtn.bmp" />
+    <None Include="Resources\NewBtn.bmp" />
+    <None Include="Resources\Information.bmp" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Checked.bmp" />
+    <None Include="Resources\CloseBtn.bmp" />
+    <None Include="Resources\CopyAsImage.bmp" />
+    <None Include="Resources\CopyBtn.bmp" />
+    <None Include="Resources\CutBtn.bmp" />
+    <None Include="Resources\DeleteBtn.bmp" />
+    <None Include="Resources\DeleteDiagramBtn.bmp" />
+    <None Include="Resources\BackBtn.bmp" />
+    <None Include="Resources\ForwardBtn.bmp" />
+    <None Include="Resources\help_document.png" />
+    <None Include="Resources\DownBtn.bmp" />
+    <None Include="Resources\arrowdown.png" />
+    <None Include="Resources\FlowEnd.png" />
+    <None Include="Resources\FlowStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WMSupportLibrary\WMSupportLibrary.csproj">
+      <Project>{4D662A0D-88C3-453D-BB48-0507D3A60AAA}</Project>
+      <Name>WMSupportLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
